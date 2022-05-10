@@ -1,0 +1,18 @@
+******* Puppy Name: Lopu *********** 
+        Months: 10
+        Favorite Food: Meat
+        Breed: Golden
+        Hungry: True
+
+******* Dog Name: Kappa *********** 
+        Age: 2
+        Favorite Food: Chicken
+        Breed: Golden
+        Hungry: True
+
+******* Cat Name: Oly *********** 
+        Age: 5
+        Favorite Food: Tuna
+        Breed: British
+        Hungry: True
+

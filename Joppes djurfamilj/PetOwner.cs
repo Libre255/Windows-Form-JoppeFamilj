@@ -21,20 +21,27 @@ namespace JoppesDjurFamilj
             petsNames = Pets.Select(pet => pet.Name).ToArray();
         }
         
-        public void Check_Ball()
+        public string Check_Ball()
         {
-            WriteLine(Ball.ToString());
             if(Ball.Quality <= 1)
             {
-                WriteLine("Time to buy a new boll");
+                return("Time to buy a new boll");
+            }
+            else
+            {
+                return(Ball.ToString());
             }
         }
-        public void Check_Laser()
+        public string Check_Laser()
         {
-            WriteLine(Laser.ToString());
             if (Laser.Battery <= 1)
             {
-                WriteLine("Time to recharge Battery");
+                return ("Time to recharge Battery");
+            }
+            else
+            {
+
+                return (Laser.ToString());
             }
         }
         public void List_animals()
@@ -99,7 +106,7 @@ namespace JoppesDjurFamilj
             }
             ReturnToMenu();
         }
-        private void Print_Out_Animals()
+        public string Print_Out_Animals()
         {
             try
             {
@@ -110,11 +117,11 @@ namespace JoppesDjurFamilj
                         Printer.WriteLine(pet.ToString());
                     }
                     Printer.Close();
-                    WriteLine("All pets information have been printed out in your current folder!");
+                    return("All pets information have been printed out in your current folder!");
                 }
             }catch(Exception ex)
             {
-                WriteLine(ex.Message);
+               return(ex.Message);
             }
         }
         private void ReturnToMenu()
